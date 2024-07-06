@@ -43,7 +43,9 @@ def get_local_ip():
     return local_ip
 
 def start_server_eel_command(port):
-    global start_server_flag, server_port
+    global start_server_flag, server_port, server_local_ip
+    server_local_ip = get_local_ip()
+
     server_port = port
     start_server_flag = True
     print(f"Received command to start server on port {port}")
