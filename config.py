@@ -6,17 +6,25 @@ from queue import Queue
 HOST = '0.0.0.0'
 PORT = 7075
 CHANNELS = 32
-
 drum_sounds = {
-    'drum1': 'drum_sounds/drum1.wav',
-    'drum2': 'drum_sounds/drum2.wav',
-    'drum3': 'drum_sounds/drum3.wav',
-    'drum4': 'drum_sounds/drum4.wav',
-    'drum5': 'drum_sounds/drum5.wav',
-    'drum6': 'drum_sounds/drum6.wav',
-    'drum7': 'drum_sounds/drum7.wav',
-    'drum8': 'drum_sounds/drum8.wav',
-    'drum9': 'drum_sounds/drum9.wav',
+    'set-1': {
+        'drum1': 'drum_sounds/set1/drum1.wav',
+        'drum2': 'drum_sounds/set1/drum2.wav',
+        'drum3': 'drum_sounds/set1/drum3.wav',
+        'drum4': 'drum_sounds/set1/drum4.wav',
+    },
+    'set-2': {
+        'drum1': 'drum_sounds/set2/drum8.wav',
+        'drum2': 'drum_sounds/set2/drum6.wav',
+        'drum3': 'drum_sounds/set2/drum7.wav',
+        'drum4': 'drum_sounds/set2/drum8.wav',
+    },
+    'set-3': {
+        'drum1': 'drum_sounds/set3/drum7.wav',
+        'drum2': 'drum_sounds/set3/drum8.wav',
+        'drum3': 'drum_sounds/set3/drum9.wav',
+        'drum4': 'drum_sounds/set3/drum10.mp3',
+    },
 }
 
 server_running = False

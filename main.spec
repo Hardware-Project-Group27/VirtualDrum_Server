@@ -27,7 +27,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='Drum_Server',
+    name='BeatFusion',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

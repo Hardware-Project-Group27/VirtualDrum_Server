@@ -45,6 +45,7 @@ def get_local_ip():
 def start_server_eel_command(port):
     global start_server_flag, server_port, server_local_ip
     server_local_ip = get_local_ip()
+    eel.updateServerIP(server_local_ip)
 
     server_port = port
     start_server_flag = True
@@ -61,12 +62,19 @@ def stop_server_eel_command():
     eel.updateGloveStatus('0', left_glove_ip_port[0], left_glove_ip_port[1], False)()
     eel.updateGloveStatus('1', right_glove_ip_port[0], right_glove_ip_port[1], False)()
 
+def select_left_sound_set_eel_command(set_name):
+    audio.select_left_set(set_name)
+    print(f"Selected sound set: {set_name}")
+
+def select_right_sound_set_eel_command(set_name):
+    audio.select_right_set(set_name)
+    print(f"Selected sound set: {set_name}")
 
 def change_server_type(new_type):
     global server_type
     if new_type in ["UDP", "WebSocket"]:
         server_type = new_type
-        print(f"Changed server type to {new_type}")
+        print(f"Changed server type to {new_type}")        
     else:
         print(f"Invalid server type: {new_type}")
 
@@ -217,7 +225,7 @@ def eel_thread():
     init_eel()
     global server_local_ip
     print("Starting Eel...")
-    eel.start('index.html', size=(800, 600), close_callback=on_close_callback, block=False)
+    eel.start('index.html', close_callback=on_close_callback, block=False)
     print("Eel started.")
     server_local_ip = get_local_ip()
     eel.updateServerIP(server_local_ip)
@@ -266,5 +274,7 @@ if __name__ == "__main__":
     eel.expose(start_server_eel_command)
     eel.expose(stop_server_eel_command)
     eel.expose(change_server_type)
+    eel.expose(select_left_sound_set_eel_command)
+    eel.expose(select_right_sound_set_eel_command)
     
     main()
