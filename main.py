@@ -225,7 +225,7 @@ def eel_thread():
     init_eel()
     global server_local_ip
     print("Starting Eel...")
-    eel.start('index.html', close_callback=on_close_callback, block=False)
+    eel.start('index.html',  size=(1920, 1080), close_callback=on_close_callback, block=False)
     print("Eel started.")
     server_local_ip = get_local_ip()
     eel.updateServerIP(server_local_ip)
