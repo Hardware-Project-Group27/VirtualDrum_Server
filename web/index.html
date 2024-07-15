@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drum Player Configuration</title>
     <link href="dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="fonts.css">
+    <!-- <link rel="stylesheet" href="fonts.css"> -->
     <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
     <script src="/eel.js"></script>
     <style>
@@ -42,6 +45,7 @@
             0 0 92px rgb(0, 221, 255),
             0 0 102px rgb(0, 221, 255),
             0 0 151px rgb(0, 221, 255);
+            font-family: 'Orbitron', sans-serif;
         }
 
         .box-glow {
@@ -69,9 +73,9 @@
 </head>
 <body class="bg-stone-900 flex h-screen">
     <div class="m-auto">
-        <h1 class="mt-5 font-orbitron neonText text-7xl font-semibold text-center">BeatFusion</h1>
-        <h2 class="font-orbitron neonText  text-2xl font-semibold text-center">Virtual Drum Gloves</h2>
-        <h2 class="font-orbitron neonText text-lg font-normal text-center">By IT Group 27</h2>
+        <h1 class="mt-5 neonText text-7xl font-semibold text-center">BeatFusion</h1>
+        <h2 class="neonText text-2xl font-semibold text-center">Virtual Drum Gloves</h2>
+        <h2 class="neonText text-lg font-normal text-center">By IT Group 27</h2>
     
     
         <div class="mt-10 flex justify-center w-fit mx-auto box-glow rounded-lg p-4">
@@ -85,15 +89,15 @@
                     <div>
                         <label for="left-sounds" class="block text-gray-200 text-sm font-bold mb-2">Left Sounds</label>
                         <select name="left-sounds" id="left-sounds" class="border rounded py-2 px-3 bg-stone-900 text-gray-200 leading-tight focus:outline-none">
-                            <option value="set-1">Set 1</option>
-                            <option selected value="set-2">Set 2</option>
+                            <option selected value="set-1">Set 1</option>
+                            <option value="set-2">Set 2</option>
                         </select>
                     </div>
                     <div>
                         <label for="right-sounds" class="block text-gray-200 text-sm font-bold mb-2">Right Sounds</label>
                         <select name="right-sounds" id="right-sounds" class="border rounded py-2 px-3 bg-stone-900 text-gray-200 leading-tight focus:outline-none">
-                            <option selected value="set-1">Set 1</option>
-                            <option value="set-2">Set 2</option>
+                            <option value="set-1">Set 1</option>
+                            <option selected value="set-2">Set 2</option>
                         </select>
                     </div>
                     

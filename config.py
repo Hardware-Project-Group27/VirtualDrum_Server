@@ -14,10 +14,10 @@ drum_sounds = {
         'drum4': 'drum_sounds/set1/drum4.wav',
     },
     'set-2': {
-        'drum1': 'drum_sounds/set2/drum8.wav',
-        'drum2': 'drum_sounds/set2/drum6.wav',
-        'drum3': 'drum_sounds/set2/drum7.wav',
-        'drum4': 'drum_sounds/set2/drum8.wav',
+        'drum1': 'drum_sounds/set2/drum2.wav',
+        'drum2': 'drum_sounds/set2/drum3.wav',
+        'drum3': 'drum_sounds/set2/drum5.wav',
+        'drum4': 'drum_sounds/set2/drum9.wav',
     },
     'set-3': {
         'drum1': 'drum_sounds/set3/drum7.wav',

@@ -8,8 +8,8 @@ loadedSounds = {}
 pygame.mixer.init(channels=2)
 pygame.mixer.set_num_channels(CHANNELS)
 
-left_selected_set = 'set-2'
-right_selected_set = 'set-1'
+left_selected_set = 'set-1'
+right_selected_set = 'set-2'
 
 def select_left_set(set_name):
     global left_selected_set
