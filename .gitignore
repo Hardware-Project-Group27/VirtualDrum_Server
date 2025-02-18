@@ -2,3 +2,7 @@
 *.csv
 *.log
 *.zip
+__pycache__/
+build
+config.bat
+node_modules
